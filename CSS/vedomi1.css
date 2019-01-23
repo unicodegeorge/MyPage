@@ -1,0 +1,77 @@
+#bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+    filter: blur(5px);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#flexcontainer1 {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    /** Pridano PAVEL HUSA */
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-flow: row wrap;
+    width: 900px;
+    margin: 0 auto;
+    /** END Pridano PAVEL HUSA */
+}
+
+.popup {
+    top: 60px;
+    /**
+    POZNAMKA
+    justify-content a flex-direction patri spis do flexcontainer1 
+    tyto vlastnosti nastavujete pro cely flex container, ne pro jednotlive itemy
+    **/
+    width: 200px;
+    min-width: 200px;
+    height: 200px;
+    border: 2px solid white;
+    position: relative;
+    text-align: center;
+    /** UPRAVENO  Pavel Husa **/
+    margin: 50px;
+    /** END UPRAVENO Pavel Husa **/
+    /* SMAZANO left: 25%; */
+    /** UPRAVENO Pavel Husa **/
+    background-image: url('../IMAGES/brain2.png');
+    background-size: cover;
+    
+    /** KONEC UPRAVENO Pavel Husa **/
+    background-color: rgba(0, 0, 0, 0.315);
+    transition: background-color 1s, height 2s;
+    font-family: 'Amatic SC';
+    color: white;
+    
+    
+}
+
+h1 {
+    margin-top: 3px;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+.popup:hover {
+    background-color: rgba(0, 0, 0, 0.603);
+    
+}
+
+#flexcontainer2 {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
